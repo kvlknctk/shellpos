@@ -1,0 +1,51 @@
+body{
+  background-color: #fff;
+  color: #000;
+  /* overflow: hidden; */
+}
+*{
+  font-family: 'Open Sans', sans-serif !important;
+}
+*:not(.user-select){
+  user-select: none;
+}
+a[href][target="_blank"] *{
+  pointer-events: none;
+}
+#output{
+  background-color: #000;
+  color: #fff;
+  height: 200px;
+  outline: none !important;
+  font-family: 'Ubuntu';
+  font-size: 12px;
+  line-height: 12px;
+  resize: none;
+}
+#output p{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 12px;
+  user-select: auto !important;
+}
+.form-control{
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #cecece !important;
+  resize: none;
+}
+.btn{
+  outline: none !important;
+  box-shadow: none !important;
+}
+#signiture{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #cecece;
+  font-size: 12px;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,52 @@
+{
+  "name": "shell-button",
+  "productName": "Shell Button",
+  "executableName": "shell-button",
+  "version": "1.0.0",
+  "description": "shell-button",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make --platform linux",
+    "make-w": "electron-forge make --platform win32 --targets '@electron-forge/maker-squirrel'"
+  },
+  "keywords": [],
+  "author": "Tahsin Cesur",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.61",
+    "@electron-forge/maker-deb": "^6.0.0-beta.61",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.61",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
+    "@electron-forge/maker-zip": "^6.0.0-beta.61",
+    "electron": "^13.1.5"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.6.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "executableName": "shell-button"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "Shell-Button",
+            "title": "Shell-Button",
+            "authors": "Tahsin Cesur"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        }
+      ]
+    }
+  }
+}

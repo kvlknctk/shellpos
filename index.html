@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline'; script-src 'self' http://xxxx 'unsafe-inline' 'unsafe-eval';">
+    <title>Shell Button</title>
+    <link rel="stylesheet" href="sources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sources/css/fonts.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="sources/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-3 mt-3">
+              <h2>Shell Button</h2>
+            </div>
+            <div class="mb-3">
+              <label>Server</label>
+              <input type="text" class="form-control shell-params" id="param1" placeholder="Server" value="ALAYDN">
+            </div>
+            <div class="mb-3">
+              <label>Database Name</label>
+              <input type="text" class="form-control shell-params" id="param2" placeholder="Database Name" value="ENG-Test-DB">
+            </div>
+            <div class="mb-3">
+              <label>Number of Orders</label>
+              <input type="text" class="form-control shell-params" id="param3" placeholder="Number of Orders">
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-warning w-100" id="run-shell">Run</button>
+            </div>
+            <div class="mb-3">
+              <label>Output</label>
+              <textarea readonly class="d-block user-select w-100" id="output"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
